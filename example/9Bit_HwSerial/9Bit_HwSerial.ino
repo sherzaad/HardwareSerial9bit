@@ -23,4 +23,6 @@ uint16_t indata;
     Serial.print(indata,HEX); //print 9bit Serial Data to Serial Monitor
   }
   Serial.println("");
+  
+  delay(500); //arbitrary delay
 }
