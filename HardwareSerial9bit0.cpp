@@ -72,7 +72,7 @@ ISR(USART_UDRE_vect)
 
 // Function that can be weakly referenced by serialEventRun to prevent
 // pulling in this file if it's not otherwise used.
-bool Serial0_available() {
+bool Serial90_available() {
   return Serial90.available();
 }
 
