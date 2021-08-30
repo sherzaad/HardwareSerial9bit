@@ -67,7 +67,7 @@ ISR(USART_UDRE_vect)
 #if defined(UBRRH) && defined(UBRRL)
   HardwareSerial9bit Serial90(&UBRRH, &UBRRL, &UCSRA, &UCSRB, &UCSRC, &UDR);
 #else
-  HardwareSerial9bit Serial(&UBRR0H, &UBRR0L, &UCSR0A, &UCSR0B, &UCSR0C, &UDR0);
+  HardwareSerial9bit Serial90(&UBRR0H, &UBRR0L, &UCSR0A, &UCSR0B, &UCSR0C, &UDR0);
 #endif
 
 // Function that can be weakly referenced by serialEventRun to prevent
